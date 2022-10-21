@@ -1,0 +1,8 @@
+{
+    // "esbonio.sphinx.confDir": "",
+    "git.ignoreLimitWarning": true,
+    "restructuredtext.preview.name": "docutils",
+    "esbonio.sphinx.buildDir" : "/Users/lab/Documents/github_repos/depend_data_management/_build/html",
+    "esbonio.sphinx.confDir"  : "${workspaceFolder}",
+    "esbonio.sphinx.srcDir"   : "/Users/lab/Documents/github_repos/depend_data_management/"
+}
