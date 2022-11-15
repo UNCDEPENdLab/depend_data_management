@@ -1,10 +1,74 @@
+=====================
 Editing this Document
-######################
+=====================
 
-If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in this series. Some highlights:
+Getting Started
+===============
+
+First and foremost: Please consult the `readthedocs documentation <https://docs.readthedocs.io/en/stable/index.html>`_ (written in readthedocs!) for detailed and up-to-date information on using RTD. 
+
+If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in `this youtube series <https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7>`_. Some highlights:
 
 - 04 Install Read the Docs Prerequisites shows you how to sign up for RTD, and install important dependencies through the python pip command. 
 
+- 21 Goes into git and github if you want to learn 
 
-Overall RTD tutorial series on youtube: https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7
+A cheatsheet for restructured text and sphinx syntax can be found `here <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingReST/CheatSheet.html>`_ but you can also look at source code for other pages as a guide.
 
+How-to Guide
+============
+
+Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes:
+
+.. code-block:: bash
+
+    ## 1. Open up your .rst file in any text editor
+    open <Tabs/tab_name.rst> # I like to use VScode so I run [code <Tabs/tab_name.rst>] but you can use anything.
+    
+    ## 2. Make changes to this file! Save it and make sure if it's a new tab that it is listed in index.rst
+    ## when you are done making changes, run:
+    
+    ## 3. Render the html, I created a bash alias <build> that functions as an easier shortcut
+    make html
+
+    ## 4. Now you can open up the .html file in your browser!
+    open _build/html/index.html
+
+At this point, your local copy is up-to-date and now you'll just need to get your changes on github. I'd highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.
+
+.. code-block:: bash
+
+    ## 5. Compare local copy to remote (optional, but useful if you have made multiple changes)
+    git status
+
+    ## 6. Add changes to git "staging area"
+    git add . # add all changes to staging area
+    git add <Tabs/tab_name.rst> # add specific files to staging area, to add multiple you can separate them with a space
+
+    ## 7. Commit changes in your staging area with an informative commit message
+    git commit -m "Updates to tab_name [be specific but concise]"
+
+    ## 8. Push your changes to remote. You should be able to see your changes on the DEPENd lab github!
+    git push
+
+    ## 9. That's it, you should now be able to view the most recent build.
+
+And some of these "steps" aren't even "steps".. pretty easy right?
+
+One-Time Setup and Dependencies
+-------------------------------
+
+
+
+
+
+
+
+Additional Resources and helpful tidbits
+----------------------------------------
+
+Here are some additional resources 
+
+
+
+hashtags need to be the same length as the title
