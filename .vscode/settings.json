@@ -4,5 +4,5 @@
     "restructuredtext.preview.name": "docutils",
     "esbonio.sphinx.buildDir" : "$READTHEDOCS_OUTPUT/html",
     "esbonio.sphinx.confDir"  : "${workspaceFolder}",
-    "esbonio.sphinx.srcDir"   : "~/depend_data_management/"
+    "esbonio.sphinx.srcDir"   : "~/depend_data_management"
 }
