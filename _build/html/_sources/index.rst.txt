@@ -2,6 +2,7 @@
    sphinx-quickstart on Mon Sep 19 11:24:00 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+   
 ==============================================
 Welcome to the DEPENd Lab's Data Curation Hub!
 ==============================================
@@ -14,6 +15,7 @@ Mission Statement
 ..  image:: _static/curation.png
    :class: with-shadow
    :scale: 80
+
 The goal of the data curation team is to set up and implement a centralized set of procedures for the management of incoming data in the DEPENd Lab. At its inception, our goal was to implement a data curation system that provide ongoing checks on the quality of incoming data for the NeuroMAP and Momentum studies. However, we have since decided to try and generalize this data curation system into a more universal set of guidelines that should apply to *any* mid-to-large-scale humans subjects research study.
 
 **Ultimately, the Data Curation Hub should serve as a reference for:**
@@ -46,6 +48,9 @@ Contents of the Data Curation Hub
    * If you are new to this documentation and would like to learn more about how to edit this document, please read through the materials in the "Editing this Document" Tab.
 
 * Directory Structure Guidelines 
+
+   * Contains accepted guidelines for how to organize and structure files within a *study* directory (unitary data collection effort) and *project* directories (analyzing data or a subset of data collected in a study to derive insights.. typically with the goal of publishing findings)
+
 * Storage Plan
 * Codebooks 
 * NDA Submission Guidelines
@@ -56,13 +61,14 @@ Questions
 Please direct any questions regarding this Data Curation Hub to Nate Hall (primary), Nidhi Desai, or Michael Hallquist.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :hidden:
    :caption: Contents:
    
    Tabs/editing.rst
    Tabs/study_structure.rst
    Tabs/data_doc_storage.rst
+   Tabs/reports.rst
    Tabs/codebooks.rst
    Tabs/nda.rst
 

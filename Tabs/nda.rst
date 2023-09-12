@@ -1,3 +1,0 @@
-NDA Guidelines
-##############
-

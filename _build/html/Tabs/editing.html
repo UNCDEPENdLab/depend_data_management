@@ -19,7 +19,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Study-General Directory Structure" href="study_structure.html" />
+    <link rel="next" title="Directory Structure Guidelines" href="study_structure.html" />
     <link rel="prev" title="Welcome to the DEPENd Lab’s Data Curation Hub!" href="../index.html" /> 
 </head>
 
@@ -50,8 +50,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="study_structure.html">Study-General Directory Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="study_structure.html">Directory Structure Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_doc_storage.html">Data and Documentation Storage Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reports.html">Generating Data Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codebooks.html">Codebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nda.html">NDA Guidelines</a></li>
 </ul>
@@ -85,16 +86,17 @@
 <section id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
 <p>First and foremost: Please consult the <a class="reference external" href="https://docs.readthedocs.io/en/stable/index.html">readthedocs documentation</a> (written in readthedocs!) for detailed and up-to-date information on using RTD.</p>
-<p>If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in <a class="reference external" href="https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7">this youtube series</a>. Some highlights:</p>
+<p>If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in <a class="reference external" href="https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7">this youtube series</a>. Each video is ~2-8 min so they are quick to watch, though you may want to code alongside the tutorial, which takes more time when things inevitably break :) Some highlights:</p>
 <ul class="simple">
 <li><p>04 Install Read the Docs Prerequisites shows you how to sign up for RTD, and install important dependencies through the python pip command.</p></li>
 <li><p>21 Goes into git and github if you want to learn</p></li>
 </ul>
 <p>A cheatsheet for restructured text and sphinx syntax can be found <a class="reference external" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingReST/CheatSheet.html">here</a> but you can also look at source code for other pages as a guide.</p>
+<p>For a complete list of directives, see <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">Sphinx documentation</a>.</p>
 </section>
 <section id="how-to-guide">
 <h2>How-to Guide<a class="headerlink" href="#how-to-guide" title="Permalink to this heading"></a></h2>
-<p>Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes:</p>
+<p>Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes (written in bash):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## 1. Open up your .rst file in any text editor</span>
 open &lt;Tabs/tab_name.rst&gt; <span class="c1"># I like to use VScode so I run [code &lt;Tabs/tab_name.rst&gt;] but you can use anything.</span>
 
@@ -108,7 +110,7 @@ make html
 open _build/html/index.html
 </pre></div>
 </div>
-<p>At this point, your local copy is up-to-date and now you’ll just need to get your changes on github. I’d highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.</p>
+<p>At this point, your local copy is up-to-date and now you’ll just need to get your changes on github. <em>I highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.</em></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## 5. Compare local copy to remote (optional, but useful if you have made multiple changes)</span>
 git status
 
@@ -131,8 +133,10 @@ git push
 </section>
 <section id="additional-resources-and-helpful-tidbits">
 <h3>Additional Resources and helpful tidbits<a class="headerlink" href="#additional-resources-and-helpful-tidbits" title="Permalink to this heading"></a></h3>
-<p>Here are some additional resources</p>
-<p>hashtags need to be the same length as the title</p>
+<p>Here are some additional one-off issues I’ve encountered. If you run into some sort of RTD buggaboo and find an adequate answer, feel free to add it below!</p>
+<ul class="simple">
+<li><p>title underlines need to be the same length as the text they emphasize</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -142,7 +146,7 @@ git push
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to the DEPENd Lab’s Data Curation Hub!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="study_structure.html" class="btn btn-neutral float-right" title="Study-General Directory Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="study_structure.html" class="btn btn-neutral float-right" title="Directory Structure Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,0 +1,9 @@
+my_data_analysis_project/
+        ├── analysis_scripts
+        ├── preproc_scripts
+        ├── support_fx
+        ├── data_raw
+        ├── data_preproc
+        ├── figures
+        ├── results
+        └── reports

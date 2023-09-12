@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study-General Directory Structure &mdash; DEPENd Lab Data Management  documentation</title>
+  <title>Directory Structure Guidelines &mdash; DEPENd Lab Data Management  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -29,6 +29,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="../index.html" class="icon icon-home"> DEPENd Lab Data Management
+            <img src="../_static/dependlogo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -41,8 +42,13 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="editing.html">Editing this Document</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Study-General Directory Structure</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Directory Structure Guidelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#study-general-directory-structure">Study-General Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-general-directory-structure">Project-General Directory Structure</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="data_doc_storage.html">Data and Documentation Storage Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reports.html">Generating Data Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codebooks.html">Codebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nda.html">NDA Guidelines</a></li>
 </ul>
@@ -61,7 +67,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Study-General Directory Structure</li>
+      <li>Directory Structure Guidelines</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Tabs/study_structure.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,8 +77,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="study-general-directory-structure">
-<h1>Study-General Directory Structure<a class="headerlink" href="#study-general-directory-structure" title="Permalink to this heading"></a></h1>
+  <section id="directory-structure-guidelines">
+<h1>Directory Structure Guidelines<a class="headerlink" href="#directory-structure-guidelines" title="Permalink to this heading"></a></h1>
+<section id="study-general-directory-structure">
+<h2>Study-General Directory Structure<a class="headerlink" href="#study-general-directory-structure" title="Permalink to this heading"></a></h2>
+</section>
+<section id="project-general-directory-structure">
+<h2>Project-General Directory Structure<a class="headerlink" href="#project-general-directory-structure" title="Permalink to this heading"></a></h2>
+<p>When it comes time to crack into a new set of data or analyze previously published data with a new method, this is a good time to intialize a project directory.</p>
+<p>In consultation with  <a class="reference external" href="https://style.tidyverse.org/">the tidyverse style guide</a> here is my proposal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>my_data_analysis_project/
+        ├── analysis_scripts
+        ├── preproc_scripts
+        ├── support_fx
+        ├── data_raw
+        ├── data_preproc
+        ├── figures
+        ├── results
+        └── reports
+</pre></div>
+</div>
+<p>description of folders</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>analysis_scripts</dt><dd><ul>
+<li><p>organize these according to a specfic analytic step with numbered steps</p></li>
+<li><p>e.g. [01-descriptive_stats/01.1-gen_descriptive_stats.R] and [01-descriptive_stats/01.2-descriptive_stats_tables.R]</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
 </section>
 
 

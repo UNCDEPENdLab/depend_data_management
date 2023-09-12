@@ -1,25 +1,26 @@
+=====================
 Editing this Document
-######################
+=====================
 
 Getting Started
----------------
+===============
 
 First and foremost: Please consult the `readthedocs documentation <https://docs.readthedocs.io/en/stable/index.html>`_ (written in readthedocs!) for detailed and up-to-date information on using RTD. 
 
-If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in `this youtube series <https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7>`_. Some highlights:
+If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in `this youtube series <https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7>`_. Each video is ~2-8 min so they are quick to watch, though you may want to code alongside the tutorial, which takes more time when things inevitably break :) Some highlights:
 
 - 04 Install Read the Docs Prerequisites shows you how to sign up for RTD, and install important dependencies through the python pip command. 
-
-.. youtube:: HKj5TXeLAWI&list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7&index=4
 
 - 21 Goes into git and github if you want to learn 
 
 A cheatsheet for restructured text and sphinx syntax can be found `here <https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingReST/CheatSheet.html>`_ but you can also look at source code for other pages as a guide.
 
-How-to Guide
-------------
+For a complete list of directives, see `Sphinx documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_.
 
-Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes:
+How-to Guide
+============
+
+Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes (written in bash):
 
 .. code-block:: bash
 
@@ -31,11 +32,15 @@ Editing this document requires a bit of one-time setup but after reading this pa
     
     ## 3. Render the html, I created a bash alias <build> that functions as an easier shortcut
     make html
+    #### However, I do away with extra typing by adding this as an alias to my ~/.bashrc: <alias build="make html">. To build, I then just type: 
+    build
 
     ## 4. Now you can open up the .html file in your browser!
     open _build/html/index.html
+    #### Similarly, I have a bash alias for this: <alias open_rtd="open _build/html/index.html">
+    open_rtd
 
-At this point, your local copy is up-to-date and now you'll just need to get your changes on github. I'd highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.
+At this point, your local copy is up-to-date and now you'll just need to get your changes on github. *I highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.*
 
 .. code-block:: bash
 
@@ -68,8 +73,7 @@ One-Time Setup and Dependencies
 Additional Resources and helpful tidbits
 ----------------------------------------
 
-Here are some additional resources 
+Here are some additional one-off issues I've encountered. If you run into some sort of RTD buggaboo and find an adequate answer, feel free to add it below!  
 
-
-
-hashtags need to be the same length as the title
+- title underlines need to be the same length as the text they emphasize
+- You may get an error if there is not a blank space under a header or directive. Just make sure you have a space in there :) 
