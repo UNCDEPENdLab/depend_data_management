@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Editing this Document &mdash; DEPENd Lab Data Management  documentation</title>
@@ -11,11 +11,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -28,12 +28,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> DEPENd Lab Data Management
-            <img src="../_static/dependlogo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            DEPENd Lab Data Management
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -54,7 +57,6 @@
 <li class="toctree-l1"><a class="reference internal" href="data_doc_storage.html">Data and Documentation Storage Plan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reports.html">Generating Data Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codebooks.html">Codebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nda.html">NDA Guidelines</a></li>
 </ul>
 
         </div>
@@ -70,8 +72,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Editing this Document</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Editing this Document</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Tabs/editing.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,9 +84,9 @@
            <div itemprop="articleBody">
              
   <section id="editing-this-document">
-<h1>Editing this Document<a class="headerlink" href="#editing-this-document" title="Permalink to this heading"></a></h1>
+<h1>Editing this Document<a class="headerlink" href="#editing-this-document" title="Link to this heading"></a></h1>
 <section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
 <p>First and foremost: Please consult the <a class="reference external" href="https://docs.readthedocs.io/en/stable/index.html">readthedocs documentation</a> (written in readthedocs!) for detailed and up-to-date information on using RTD.</p>
 <p>If you are planning on making changes to this documentation, I highly recommend working through the first 20 videos in <a class="reference external" href="https://www.youtube.com/playlist?list=PLPDCBPbzk1AYghqYazE7Cxt3p7edml8I7">this youtube series</a>. Each video is ~2-8 min so they are quick to watch, though you may want to code alongside the tutorial, which takes more time when things inevitably break :) Some highlights:</p>
 <ul class="simple">
@@ -95,47 +97,52 @@
 <p>For a complete list of directives, see <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">Sphinx documentation</a>.</p>
 </section>
 <section id="how-to-guide">
-<h2>How-to Guide<a class="headerlink" href="#how-to-guide" title="Permalink to this heading"></a></h2>
+<h2>How-to Guide<a class="headerlink" href="#how-to-guide" title="Link to this heading"></a></h2>
 <p>Editing this document requires a bit of one-time setup but after reading this page my hope is that you can edit this documentation hub with relative ease. These are the only steps required to make changes (written in bash):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## 1. Open up your .rst file in any text editor</span>
-open &lt;Tabs/tab_name.rst&gt; <span class="c1"># I like to use VScode so I run [code &lt;Tabs/tab_name.rst&gt;] but you can use anything.</span>
+open<span class="w"> </span>&lt;Tabs/tab_name.rst&gt;<span class="w"> </span><span class="c1"># I like to use VScode so I run [code &lt;Tabs/tab_name.rst&gt;] but you can use anything.</span>
 
 <span class="c1">## 2. Make changes to this file! Save it and make sure if it&#39;s a new tab that it is listed in index.rst</span>
 <span class="c1">## when you are done making changes, run:</span>
 
 <span class="c1">## 3. Render the html, I created a bash alias &lt;build&gt; that functions as an easier shortcut</span>
-make html
+make<span class="w"> </span>html
+<span class="c1">#### However, I do away with extra typing by adding this as an alias to my ~/.bashrc: &lt;alias build=&quot;make html&quot;&gt;. To build, I then just type:</span>
+build
 
 <span class="c1">## 4. Now you can open up the .html file in your browser!</span>
-open _build/html/index.html
+open<span class="w"> </span>_build/html/index.html
+<span class="c1">#### Similarly, I have a bash alias for this: &lt;alias open_rtd=&quot;open _build/html/index.html&quot;&gt;</span>
+open_rtd
 </pre></div>
 </div>
 <p>At this point, your local copy is up-to-date and now you’ll just need to get your changes on github. <em>I highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.</em></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## 5. Compare local copy to remote (optional, but useful if you have made multiple changes)</span>
-git status
+git<span class="w"> </span>status
 
 <span class="c1">## 6. Add changes to git &quot;staging area&quot;</span>
-git add . <span class="c1"># add all changes to staging area</span>
-git add &lt;Tabs/tab_name.rst&gt; <span class="c1"># add specific files to staging area, to add multiple you can separate them with a space</span>
+git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1"># add all changes to staging area</span>
+git<span class="w"> </span>add<span class="w"> </span>&lt;Tabs/tab_name.rst&gt;<span class="w"> </span><span class="c1"># add specific files to staging area, to add multiple you can separate them with a space</span>
 
 <span class="c1">## 7. Commit changes in your staging area with an informative commit message</span>
-git commit -m <span class="s2">&quot;Updates to tab_name [be specific but concise]&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Updates to tab_name [be specific but concise]&quot;</span>
 
 <span class="c1">## 8. Push your changes to remote. You should be able to see your changes on the DEPENd lab github!</span>
-git push
+git<span class="w"> </span>push
 
 <span class="c1">## 9. That&#39;s it, you should now be able to view the most recent build.</span>
 </pre></div>
 </div>
 <p>And some of these “steps” aren’t even “steps”.. pretty easy right?</p>
 <section id="one-time-setup-and-dependencies">
-<h3>One-Time Setup and Dependencies<a class="headerlink" href="#one-time-setup-and-dependencies" title="Permalink to this heading"></a></h3>
+<h3>One-Time Setup and Dependencies<a class="headerlink" href="#one-time-setup-and-dependencies" title="Link to this heading"></a></h3>
 </section>
 <section id="additional-resources-and-helpful-tidbits">
-<h3>Additional Resources and helpful tidbits<a class="headerlink" href="#additional-resources-and-helpful-tidbits" title="Permalink to this heading"></a></h3>
+<h3>Additional Resources and helpful tidbits<a class="headerlink" href="#additional-resources-and-helpful-tidbits" title="Link to this heading"></a></h3>
 <p>Here are some additional one-off issues I’ve encountered. If you run into some sort of RTD buggaboo and find an adequate answer, feel free to add it below!</p>
 <ul class="simple">
 <li><p>title underlines need to be the same length as the text they emphasize</p></li>
+<li><p>You may get an error if there is not a blank space under a header or directive. Just make sure you have a space in there :)</p></li>
 </ul>
 </section>
 </section>

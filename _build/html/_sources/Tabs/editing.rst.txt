@@ -32,9 +32,13 @@ Editing this document requires a bit of one-time setup but after reading this pa
     
     ## 3. Render the html, I created a bash alias <build> that functions as an easier shortcut
     make html
+    #### However, I do away with extra typing by adding this as an alias to my ~/.bashrc: <alias build="make html">. To build, I then just type: 
+    build
 
     ## 4. Now you can open up the .html file in your browser!
     open _build/html/index.html
+    #### Similarly, I have a bash alias for this: <alias open_rtd="open _build/html/index.html">
+    open_rtd
 
 At this point, your local copy is up-to-date and now you'll just need to get your changes on github. *I highly recommend running step 4 and inspecting the resulting page to make sure your changes render correctly before pushing to github.*
 
@@ -72,3 +76,4 @@ Additional Resources and helpful tidbits
 Here are some additional one-off issues I've encountered. If you run into some sort of RTD buggaboo and find an adequate answer, feel free to add it below!  
 
 - title underlines need to be the same length as the text they emphasize
+- You may get an error if there is not a blank space under a header or directive. Just make sure you have a space in there :) 
